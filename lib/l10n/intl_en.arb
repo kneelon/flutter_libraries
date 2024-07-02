@@ -1,0 +1,15 @@
+{
+  "language": "English",
+  "helloWorld": "Hello World!",
+  "multiLanguage": "Multi Language",
+
+  "title": "Hello",
+  "@title": {
+    "desc": "A welcome message",
+    "placeholders": {
+      "username": {
+        "type": "String"
+      }
+    }
+  }
+}
