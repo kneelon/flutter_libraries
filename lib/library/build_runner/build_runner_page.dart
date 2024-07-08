@@ -31,7 +31,7 @@ class _BuildRunnerPageState extends State<BuildRunnerPage> {
             ),
             Padding(
               padding: EdgeInsets.all(8.0),
-              child: Text("Below imports add part 'user_model.g.dart'"),
+              child: Text("Below imports add part 'user_model.dart.g.dart'"),
             ),
             Text(r"factory UserModel.fromJson(Map<String, dynamic> json) => _$UserModelFromJson(json);"),
             Text(r"Map<String, dynamic> toJson() => _$UserModelToJson(this);"),

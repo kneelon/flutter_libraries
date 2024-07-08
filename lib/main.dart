@@ -4,6 +4,7 @@ import 'package:libraries/library/country_picker/country_picker.dart';
 import 'package:libraries/library/localization/localization_page.dart';
 import 'package:libraries/library/pull_to_refresh/pull_to_refresh.dart';
 import 'package:libraries/library/sqflite/sqf_lite_page.dart';
+import 'package:libraries/library/uwi_test/ui/test_home_page.dart';
 import 'package:libraries/library/voice_to_text/voice_to_text_page.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -55,6 +56,7 @@ class Homepage extends StatelessWidget {
             _buildLayers(context, 'Build Runner'),
             _buildLayers(context, 'Localization'),
             _buildLayers(context, 'SQF Lite'),
+            _buildLayers(context, 'UWI Test'),
           ],
         ),
       ),
@@ -108,6 +110,9 @@ class Homepage extends StatelessWidget {
         break;
       case 'SQF Lite':
         Navigator.push(context, MaterialPageRoute(builder: (context) => SqfLitePage(pageTitle: title)));
+        break;
+      case 'UWI Test':
+        Navigator.push(context, MaterialPageRoute(builder: (context) => TestHomePage(pageTitle: title)));
         break;
 
     }
